@@ -1,0 +1,129 @@
+/* Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #cfe9f1, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header dan Judul */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header hr {
+    border: none;
+    height: 3px;
+    background-color: #000;
+    margin: 0;
+}
+
+/* Navigasi */
+nav {
+    background-color: #90e0ef;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #023047;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #0077b6;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Gambar */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Section Judul dan Paragraf */
+h3 {
+    color: #023047;
+    margin-left: 20px;
+}
+
+p {
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+/* Daftar */
+ol {
+    margin-left: 40px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+/* Animasi Tambahan */
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+.belanja-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .kategori {
+    background-color: #f0f8ff;
+    border: 2px solid #90e0ef;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .kategori:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .kategori h4 {
+    margin: 0 0 10px;
+    color: #0077b6;
+  }
+
+  .kategori ul {
+    padding-left: 20px;
+  }
+
+  .kategori li {
+    margin-bottom: 5px;
+    list-style: '✔ ';
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0077b6;
+    color: white;
+    margin-top: 40px;
+  }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

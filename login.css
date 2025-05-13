@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #cfe9f1, #ffffff); /* Gradasi biru */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+/* Judul halaman */
+h1 {
+    color: #023047;
+    text-align: center;
+    margin-bottom: 20px; /* Sesuaikan jarak bawah */
+    font-size: 2.5em; /* Perbaiki ukuran font */
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Label dan input styling */
+label {
+    font-size: 1.2em;
+    color: #023047;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Styling untuk input email, password, dan tombol submit */
+input[type="email"], input[type="password"], input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #90e0ef;
+    font-size: 1.1em;
+}
+
+/* Styling input email dan password */
+input[type="email"], input[type="password"] {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Styling tombol submit */
+input[type="submit"] {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    padding: 12px;
+}
+
+input[type="submit"]:hover {
+    background-color: #005f7a;
+}
+
+/* Styling checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Styling label untuk checkbox */
+label[for="remember"] {
+    font-size: 1em;
+    color: #023047;
+}
+
+/* Styling untuk tautan Daftar */
+a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pesan dan tombol Daftar */
+p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* Posisi dan margin untuk link Daftar */
+p a {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

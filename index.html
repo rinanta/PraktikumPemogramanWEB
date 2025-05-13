@@ -1,53 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME | INFORMATIKA </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HOME | INFORMATIKA</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
+<body>
+    <header>
+        <h1>WEB INFORMATIKA</h1>
+        <hr />
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+    </header>
 
-<body bgcolor="skayblue">
-    <h1 align="center">WEB INFORMATIKA </h1>
-    <hr size="3px" color="black" width="100%">
-    <nav align="center">
-        <a href="index.html">HOME</a> |
-        <a href="profile.html">PROFILE</a> |
-        <a href="about.html">ABOUT US</a> |
-        <a href="login.html">LOGIN</a>
-    </nav>
-    <center>
-        <img
-            src="gambarku.jpeg" width="230px">
-    </center>
-    <h3>BERITA UNIMUS</h3>
-    <p>
-        <B> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, <I>velit?</I> <U>Obcaecati qui
-                necessitatibusearum? </U></B>
-        Praesentium quos aut assumenda ad, ex commodi nam laborum harum similique doloribus perspiciatis excepturi
-        consequatur dolorum!
-    </p>
-    <H3>DAFTAR BELANJA : </H3>
-    <ol>
-        <li>Sayuran</li>
-        <ul>
-            <li>tomat</li>
-            <li>bayam</li>
-            <li>sawi</li>
-        </ul>
-        <li>Buah</li>
-        <ul>
-            <li>mangga</li>
-            <li>apel</li>
-            <li>durian</li>
-        </ul>
-        <li>Daging</li>
-        <ul>
-            <li>ayam 1 ekor</li>
-            <li>Sapi</li>
-        </ul>
-    </ol>
+    <main>
+        <img src="gambarku.jpeg" alt="Gambar Utama" width="230" />
 
-</body>
+        <section>
+            <h3>BERITA UNIMUS</h3>
+            <p>
+                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, <em>velit?</em> <u>Obcaecati qui necessitatibus earum?</u></strong>
+                Praesentium quos aut assumenda ad, ex commodi nam laborum harum similique doloribus perspiciatis excepturi consequatur dolorum!
+            </p>
+        </section>
 
+        <section>
+            <h3>DAFTAR BELANJA</h3>
+    <div class="belanja-container">
+      <div class="kategori">
+        <h4>🥦 Sayuran</h4>
+        <ul>
+          <li>Tomat</li>
+          <li>Bayam</li>
+          <li>Sawi</li>
+        </ul>
+      </div>
+      <div class="kategori">
+        <h4>🍎 Buah</h4>
+        <ul>
+          <li>Mangga</li>
+          <li>Apel</li>
+          <li>Durian</li>
+        </ul>
+      </div>
+      <div class="kategori">
+        <h4>🍖 Daging</h4>
+        <ul>
+          <li>Ayam 1 ekor</li>
+          <li>Sapi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
 </html>
