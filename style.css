@@ -1,0 +1,104 @@
+/* Header */
+.header {
+    background-color: #0077b6; /* Biru utama */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Logo kecil */
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Nav style */
+nav {
+    background-color: #90e0ef;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #003049;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0077b6;
+}
+
+/* Profile Layout */
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card {
+    background: #e8faff;
+    border: 2px solid #90e0ef;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+}
+
+.info-section {
+    max-width: 600px;
+    padding: 20px;
+    background: #f6fdff;
+    border-radius: 10px;
+    border: 1px solid #90e0ef;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
