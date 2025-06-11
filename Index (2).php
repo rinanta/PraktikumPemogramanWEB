@@ -11,10 +11,11 @@
     <h1 align="center">WEB INFORMATIKA </h1>
     <hr size="3px" color="black" width="100%">
     <nav align="center">
-        <a href="index.html">HOME</a> |
-        <a href="profile.html">PROFILE</a> |
-        <a href="about.html">ABOUT US</a> |
-        <a href="login.html">LOGIN</a>
+        <a href="index.php">HOME</a> |
+        <a href="profile.php">PROFILE</a> |
+        <a href="about.php">ABOUT US</a> |
+         <a href="datamahasiswa.php">Data Mahasiswa</a> |
+        <a href="login.php">LOGIN</a>
     </nav>
     <center>
         <img

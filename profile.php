@@ -14,10 +14,11 @@
         </div>
         <hr>
         <nav>
-            <a href="index.html">BERANDA</a>
-            <a href="profile.html">PROFIL</a>
-            <a href="about.html">TENTANG KAMI</a>
-            <a href="login.html">MASUK</a>
+            <a href="index.php">HOME</a>
+            <a href="profile.php">PROFILE</a>
+            <a href="about.php">ABOUT US</a>
+            <a href="login.php">LOGIN</a>
+            <a href="datamahasiswa.php">DATA MAHASISWA</a>
         </nav>
     </header>
 
