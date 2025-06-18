@@ -41,7 +41,7 @@
             </ul>
 
             <h3>Kontak</h3>
-            <p>Email: saya@email.com</p>
+            <p>Email: dewirinanta@gmail.com</p>
         </div>
     </section>
 

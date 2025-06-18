@@ -102,3 +102,348 @@ nav a:hover {
         align-items: center;
     }
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #00BFFF;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.profile-container {
+    display: flex;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Info & Foto */
+.info-section {
+    flex: 1;
+}
+
+.foto-section {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #00BFFF;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Card */
+.card {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Info Section */
+.info-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #007BFF;
+    font-weight: 600;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.3px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eef2f7;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 40px;         /* Tambahkan ini agar turun ke bawah */
+    margin-bottom: 30px;
+    color: #007BFF;
+    font-weight: 600;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.add-btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+thead th {
+    text-align: center;
+    padding: 14px 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+tbody td {
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f7ff;
+}
+
+.foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.hapus-btn {
+    padding: 6px 14px;
+    background-color: #ff4d4f;
+    color: white;
+    font-size: 14px;
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.hapus-btn:hover {
+    background-color: #d9363e;
+}

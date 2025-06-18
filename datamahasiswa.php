@@ -12,11 +12,13 @@ $i = 1; // Inisialisasi variabel untuk nomor urut
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Data Mahasiswa</h1>
     <a href="tambahdata.php">
-    <button style="margin-bottom:12px; background-color: pink;">Tambah Data</button></a>
+    <button style="margin-bottom:12px;background-color: pink;
+;">Tambah Data</button></a>
 
     <table border='1' cellspacing='0' cellpadding='10'>
         <tr>
@@ -46,4 +48,7 @@ $i = 1; // Inisialisasi variabel untuk nomor urut
     </tr>
     <?php $i++; ?>
 <?php endforeach; ?>
+    </table>
+</body>
+</html>
 
