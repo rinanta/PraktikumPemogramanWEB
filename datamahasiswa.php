@@ -14,7 +14,9 @@ $i = 1; // Inisialisasi variabel untuk nomor urut
     <title>Data Mahasiswa</title>
 </head>
 <body>
-    <h1>Data Mahasiswa</h1>
+  <h1>Data Mahasiswa</h1>
+    <a href="tambahdata.php">
+    <button style="margin-bottom:12px; background-color: pink;">Tambah Data</button></a>
 
     <table border='1' cellspacing='0' cellpadding='10'>
         <tr>
@@ -24,17 +26,24 @@ $i = 1; // Inisialisasi variabel untuk nomor urut
             <th>NIM</th>
             <th>Jurusan</th>
             <th>No. HP</th>
+            <th>Aksi</th>
         </tr>
-        <?php foreach ($rows as $mhs): ?>
-        <tr>
-            <td><?= $i ?></td>
-            <td><img src="img/<?= $mhs["foto"] ?>" alt="foto" width="60" /></td>
-            <td><?= $mhs["nama"] ?></td>
-            <td><?= $mhs["nim"] ?></td>
-            <td><?= $mhs["jurusan"] ?></td>
-            <td><?= $mhs["nohp"] ?></td>
-        </tr>
-        <?php $i++; endforeach; ?>
-    </table>
-</body>
-</html>
+      <?php $i = 1; ?>
+<?php foreach ($rows as $mhs): ?>
+    <tr>
+        <td><?= $i ?></td>
+        <td><img src="img/<?= $mhs["foto"] ?>" alt="foto" width="60" /></td>
+        <td><?= $mhs["nama"] ?></td>
+        <td><?= $mhs["nim"] ?></td>
+        <td><?= $mhs["jurusan"] ?></td>
+        <td><?= $mhs["nohp"] ?></td>
+        <td>
+            <a href="hapusdata.php?id=<?= $mhs["id"] ?>" 
+               onclick="return confirm('Yakin ingin menghapus?');"
+               style="margin-bottom:12px; background-color: pink; padding: 5px 10px; text-decoration: none; color: black; border-radius: 4px;">
+                Hapus</a>
+        </td>
+    </tr>
+    <?php $i++; ?>
+<?php endforeach; ?>
+
