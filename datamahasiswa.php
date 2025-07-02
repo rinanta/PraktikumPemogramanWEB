@@ -40,10 +40,14 @@ $i = 1; // Inisialisasi variabel untuk nomor urut
         <td><?= $mhs["jurusan"] ?></td>
         <td><?= $mhs["nohp"] ?></td>
         <td>
-            <a href="hapusdata.php?id=<?= $mhs["id"] ?>" 
+            <a href="hapusdata.php?id=<?= $mhs["id"] ?>"
                onclick="return confirm('Yakin ingin menghapus?');"
                style="margin-bottom:12px; background-color: pink; padding: 5px 10px; text-decoration: none; color: black; border-radius: 4px;">
                 Hapus</a>
+              <a href="ubahdata.php?id=<?= $mhs["id"] ?>" 
+               style="margin-bottom:12px; background-color: Brown; padding: 5px 10px; text-decoration: none; color: black; border-radius: 4px;">
+                Edit</a>
+                
         </td>
     </tr>
     <?php $i++; ?>

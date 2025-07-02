@@ -40,4 +40,26 @@ $nama = $_POST['nama'];
         return mysqli_affected_rows($koneksi);
     }
 
+
+
+    function ubahdata($data, $id)
+{
+    global $koneksi;
+$nama = $_POST['nama'];
+    $nim = $_POST['nim'];
+    $jurusan = $_POST['jurusan'];
+    $nohp = $_POST['nohp'];
+
+    $query = "UPDATE mahasiswa SET 
+    nama='$nama',
+    nim= '$nim',
+    jurusan= '$jurusan',
+    nohp= '$nohp'
+    WHERE id=$id;
+    ";
+    mysqli_query($koneksi, $query);
+    return mysqli_affected_rows($koneksi);
+    }
+
+    
 ?>
