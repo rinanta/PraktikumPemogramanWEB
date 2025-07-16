@@ -1,4 +1,13 @@
 <?php
+
+session_start();
+
+if(!isset($_SESSION["login"]))
+{
+    header("Location: login.php");
+    exit;
+}
+
 require 'function.php';
 
 $query = "SELECT * FROM mahasiswa";
@@ -15,6 +24,7 @@ $i = 1; // Inisialisasi variabel untuk nomor urut
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href= "logout.php">Logout</h1>
   <h1>Data Mahasiswa</h1>
     <a href="tambahdata.php">
     <button style="margin-bottom:12px;background-color: pink;
@@ -45,7 +55,7 @@ $i = 1; // Inisialisasi variabel untuk nomor urut
                style="margin-bottom:12px; background-color: pink; padding: 5px 10px; text-decoration: none; color: black; border-radius: 4px;">
                 Hapus</a>
               <a href="ubahdata.php?id=<?= $mhs["id"] ?>" 
-               style="margin-bottom:12px; background-color: Brown; padding: 5px 10px; text-decoration: none; color: black; border-radius: 4px;">
+               style="margin-bottom:12px; background-color:Brown; padding: 5px 10px; text-decoration: none; color: black; border-radius: 4px;">
                 Edit</a>
                 
         </td>

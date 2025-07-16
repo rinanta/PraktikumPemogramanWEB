@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke database
-$koneksi = mysqli_connect("localhost", "root", "", "webinfor");
+$koneksi = mysqli_connect("localhost:3307", "root", "", "webinfor");
 
 // Cek koneksi
 if (!$koneksi) {
@@ -60,6 +60,48 @@ $nama = $_POST['nama'];
     mysqli_query($koneksi, $query);
     return mysqli_affected_rows($koneksi);
     }
+
+    function register($data)
+    {
+        global $koneksi;
+
+        $username = stripslashes($data["username"]);
+        $password1 = $data ["password1"];
+        $password2 = $data ["password2"];
+
+        $query = "SELECT * FROM user WHERE username= '$username'";
+
+       $username_chek = mysqli_query($koneksi, $query);
+       if(mysqli_num_rows($username_chek) > 0)
+        {
+            return "username sudah terdaftar";
+        }
+
+        if(!preg_match('/^[a-zA-Z0-9.-_]+$/', $username))
+        {
+            return "username tidak valid";
+        }
+
+        if($password1 !== $password2)
+        {
+            return "Password Tidak Sesuai!";
+        }
+
+        $encrypt_pass = password_hash($password1, PASSWORD_DEFAULT);
+
+        $query_insert = "INSERT INTO user (username, password) VALUE ('$username', '$encrypt_pass')";
+        if (mysqli_query($koneksi, $query_insert))
+        {
+            return "Register Berhasil";
+        }
+        else
+        {
+            return "gagal" . mysqli_error($konksi);
+        
+        }
+
+    }
+
 
     
 ?>
